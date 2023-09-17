@@ -1,6 +1,6 @@
 body {
-    background-color: navy;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Gothic', sans-serif;
 }
 
@@ -11,24 +11,39 @@ header {
 
 main {
     width: 100%;
-    
-    
     padding: 20px;
     position: relative;
 }
 
-.product, .cart, .login, .order-history {
+.product, .cart{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     width: 45%;
 }
 
-
+.order-history {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width : 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sign{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin-left: +750px;
+    margin-right: +750px;
+    margin-top: -445px;
+}
 
 button {
-    background-color: white;
-    color: navy;
+    background-color: rgb(12, 12, 12);
+    color: rgb(247, 247, 247);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -37,7 +52,7 @@ button {
 }
 
 button:hover {
-    background-color: #ccc;
+    background-color: #fdfdfd;
 }
 .products{
     display: flex;
@@ -47,11 +62,45 @@ button:hover {
     height: 50%;
 }
 
-.videos {
-    position: relative;
-    display: inline-flexbox;
-    top: 0%;
-    width: 100%;
-    height: 300px;
-    background-color: rgb(3, 3, 3);
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #070707;
+    padding: 0px;
+    text-align: center;
 }
+
+footer a {
+    color: #070707;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+li.nav-item {
+    float: center;
+    display: inline-block;
+}
+
+li.nav-item a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.nav-item a:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/cross.png" type="image/png">
 </head>
 <body>
     <header>
@@ -13,23 +14,77 @@
     
     <main>
         <section class="cart">
-            <h2>Seu Carrinho</h2>
-            <img>\<img src="img/rosario" alt="Rosário Católico" width="500" height="600">>
-            <!-- Lista de produtos no carrinho -->
+            <center><h2>O que compraste até agora</h2></center>
+    
+    <ul>
+        <a href="home_page.html"> 
+        <li><img src="img/Rosario.jpg" alt="Rosário Católico" width="10%" height="10%"></a></li><h3>Rosário Católico</h3
+        <p>Preço: R$50,00</p>
+        <a href="home_page.html"> 
+        <li><img src="img/chotki.jpg" alt="Rosário Católico" width="10%" height="10%"></a></li><h3>Chotki</h3
+        <p>Preço: R$50,00</p>
+    </ul>
+
+    <p>Total: R$100,00</p>
+    
+    <center><button><a href="order_history.html">Finalizar Compra</a></button></center>
         </section>
         
-        <section class="login">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Nome de usuário:</label>
-                <input type="text" id="username" name="username" required>
-                
+        <section class="sign">
+           <h2>Cadastro</h2>
+            <form method="get">
+                <label for="name"us>Nome</label>
+                <input type="text" id="text" name="text" required>
+                <br>
+                <label for="name"us>Sobrenome</label>
+                <input type="text" id="text" name="text" required>
+                <br>
+                <label for="date"us>Data de nascimento</label>
+                <input type="date" id="number" name="number" required>
+                <br>
+                <label for="cpf"us>CPF:</label>
+                <input type="number" id="cpf" name="cpf" required>
+                <br>
+                <label for="Rua"us>Rua</label>
+                <input type="text" id="rua" name="rua" required>
+                <br>
+                <label for="Num_rua"us>Número da Rua</label>
+                <input type="number" id="num_rua" name="num_rua" required>
+                <br>
+                <label for="cep"us>CEP</label>
+                <input type="number" id="cep" name="cep" required>
+                <br>
+                <label for="cidade"us>Cidade</label>
+                <input type="text" id="text" name="city" required>
+                <br>
+                <label for="referencia"us>Referência Próxima</label>
+                <input type="text" id="cep" name="cep" required>
+                <br>
+                <label for="email"us>E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required>
-                
-                <button type="submit">Entrar</button>
+                <br>
+                <label for="password-conf">Confirmação de senha:</label>
+                <input type="password" id="Confirmação" name="Confirmação" required>
+                <br>
+                <center><button><a href="order_history.html">Comprar</a></button></center>
             </form>
         </section>
     </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <center><p>&copy; 2023 Lectio Divina - Artigos Religiosos. Todos os direitos reservados.</p>
+        <ul>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Contato</a></center>
+        </ul>
+    </footer>
 </body>
 </html>
