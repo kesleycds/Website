@@ -15,11 +15,13 @@ main {
     position: relative;
 }
 
-.product, .cart{
+.product, .cart, .sign{
+    display:inline-table;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     width: 45%;
+    
 }
 
 .order-history {
@@ -30,16 +32,7 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-.sign{
-    background-color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    width: 45%;
-    margin-left: +750px;
-    margin-right: +750px;
-    margin-top: -445px;
-}
+
 
 button {
     background-color: rgb(12, 12, 12);
