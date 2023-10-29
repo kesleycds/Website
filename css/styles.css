@@ -37,9 +37,10 @@ main {
     padding:00px;
 }
 .order-history {
-    display: inline-block;
-    width: 100%;
+    display: grid;
+    width: 80%;
     margin: 0;
+    align-items: center;
 }
 .cart {
     display: inline-grid;
