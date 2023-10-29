@@ -13,6 +13,7 @@ main {
     width: 100%;
     padding: 20px;
     position: relative;
+    
 }
 
 .product, .cart, .sign, .order-history {
@@ -45,8 +46,7 @@ button:hover {
 
 .products {
     display: inline-block;
-    width: 25%; /* Defina a largura desejada para cada elemento */
-    margin: 0 2%; /* Adicione margem para espaçamento entre os elementos */
+   
 }
 
 .product {
@@ -97,11 +97,12 @@ li.nav-item a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos para telas com largura específica de 480x839 */
+
 @media (max-width: 480px) and (min-height: 839px) {
     .product, .cart, .sign, .order-history {
         display: inline-block;
-        width: 48%; /* Ajuste para acomodar os elementos lado a lado */
-        margin: 1%; /* Adicione margem para espaçamento entre os elementos */
+        position:sticky;
+        width: 48%; 
+        margin: 1%;
     }
 }
