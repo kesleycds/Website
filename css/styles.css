@@ -8,6 +8,10 @@ header {
     text-align: center;
     padding: 30px;
 }
+.cover{
+    width: 25%;
+}
+
 
 .imgs {
     float:left;
@@ -39,9 +43,11 @@ main {
 }
 .cart {
     display: inline-grid;
+    width:30%;
 }
 .sign {
     display: inline-grid;
+    width:70%;
 }
 
 
@@ -97,7 +103,8 @@ ul.navbar {
     width: 100%;
     text-align: center;
     padding: 0px;
-    position:fixed;
+    position:sticky;
+    top:0;
 }
 
 li.nav-item {
@@ -118,11 +125,56 @@ li.nav-item a:hover {
 }
 
 
-@media *mobile* (max-width: 480px) and (min-height: 839px) {
-    .product, .cart, .sign, .order-history {
-        display: inline-block;
+@media only screen and (max-width:480px){
+
+    
+    li.nav-item {
+        display: block;
         position:sticky;
-        width: 48%; 
-        margin: 1%;
     }
-}
+    .product, {
+        display:inline-block;
+        text-align: center;
+        width: 80%;
+        margin-left: 0%;
+    }
+    .carts{
+        display: inline-block;
+    }
+    .cart{
+        width:80%;
+        align-items: center;
+    }
+
+    .sign {
+        width: 80%;
+        align-items: center;
+    }
+    form{
+        margin-left: -10%;
+    }
+    .button {
+        align-items: center;
+        
+    }
+    .order-history {
+        width: 80%;
+        align-items: center;
+        margin-left: -10%;
+    }
+    .products {
+        display:block;
+        width: 150%;
+        
+    }
+    .videos {
+        margin-left: 10%;
+    }
+    .footer{
+        display:block;
+        text-align: end;
+    }
+    .cover{
+        width: 100%;
+        align-items: center;
+    }
