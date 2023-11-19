@@ -3,11 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Idade</title>
+  <title>Atividade 3</title>
 </head>
 <body>
+  <h1>QUESTÃO 1</h1>
+  <form id="Forms">
+    <label for="original">Atividade 1</label>
+    <input type="text" name="original" id="snakecase">
+    <button onclick="wordchanger()" type="button" >Enviar</button>
+  </form>
+  <p>INPUT:</p><p id="textoOriginal"></p>
+  <p>OUTPUT:</p><p id="textoAlterado"></p>
 
-  <h1>Calculadora de Idade</h1>
+  <script>
+    function wordchanger()  {
+      event.preventDefault ();
+      var textoOriginal = document.getElementById("snakecase").value;
+      document.getElementById("textoOriginal").innerText = textoOriginal
+      var textoModificado = textoOriginal.replace(/\s+/g, '_').toLowerCase();
+      document.getElementById("textoAlterado").innerText = textoModificado
+    }
+  </script>
+
+
+<br>
+<h1>QUESTÃO 2</h1>
+
+      <p id="resultado"></p>
+      <p id="objeto1"></p>
+      <p id="objeto2"></p>
+  
+    <script>
+        function compareObjects(obj1, obj2) {
+            if (JSON.stringify(obj1) === JSON.stringify(obj2)) {
+                return true; 
+            } else {
+               
+                const keysObj1 = Object.keys(obj1);
+                const keysObj2 = Object.keys(obj2);
+              
+                const differentKeys = [];
+              
+                keysObj1.forEach(key => {
+                    if (!keysObj2.includes(key)) {
+                        differentKeys.push(key);
+                    }
+                });
+              
+                keysObj2.forEach(key => {
+                    if (!keysObj1.includes(key)) {
+                        differentKeys.push(key);
+                    }
+                });
+              
+                const resultadoElement = document.getElementById('resultado');
+                resultadoElement.textContent = "Objetos são idênticos: " + !differentKeys.length;
+
+                if (differentKeys.length > 0) {
+                    resultadoElement.textContent += "\n Chaves diferentes: " + differentKeys.join(', ');
+                }
+
+                return false;
+            }
+        }
+      
+        const objeto1 = { nome: "John", idade: 30, cidade: "Nova York" };
+        const objeto2 = { nome: "John", idade: 30, país: "EUA" };
+      
+        compareObjects(objeto1, objeto2);
+    </script>
+
+<br>
+  <h1>QUESTÃO 3</h1>
 
   <label for="dataNascimento">Data de Nascimento:</label>
   <input type="date" id="dataNascimento">
@@ -17,6 +84,7 @@
   <p id="resultado"></p>
 
   <script>
+    
     function calcularIdade() {
       
       const dataNascimento = document.getElementById('dataNascimento').value;
@@ -32,7 +100,17 @@
         document.getElementById('resultado').innerText = 'Idade: ' + diferencaAnos;
       }
     }
+  
   </script>
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
